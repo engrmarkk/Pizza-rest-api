@@ -1,7 +1,7 @@
 from flask import Flask
 from flask_restx import Api
-from .orders import order_namespace
-from .auth import auth_namespace
+from .orders.views import order_namespace
+from .auth.views import auth_namespace
 from .config import config_dict
 from .utils import db, migrate, jwt
 from .models import Order
